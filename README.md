@@ -20,6 +20,10 @@ The project follows a **first for self, open for others** stance: it is built fi
 
 日本語版READMEは[`README.ja.md`](README.ja.md)をご覧ください。
 
+## Investment research with Codex
+
+This fork includes a multibagger discovery screener and two offline market research workflows. To try the screener, open Codex in the checkout and ask “Use $multibagger-discovery-screener on the synthetic fixture and explain why YFIX is speculative.” The example runs locally without an API key. [Installation and available skills](docs/custom/CODEX_COMPATIBILITY.md) · [Screener inputs, scoring and example command](docs/custom/MULTIBAGGER_DISCOVERY.md)
+
 ## Disclaimer
 
 This repository is for educational, research, and process-improvement purposes only. It is not financial advice, investment advisory service, tax advice, legal advice, a signal service, or a broker execution platform. Trading and investing involve risk, including loss of principal. Past performance, backtests, screens, reports, and AI-generated analysis do not guarantee future results. All trading decisions, position sizing, tax/regulatory compliance, and broker usage are the user's responsibility.

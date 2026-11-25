@@ -1,0 +1,1698 @@
+{
+  "schema_version": 1,
+  "dataset": "synthetic",
+  "mode": "snapshot",
+  "as_of": "2025-03-31T22:00:00+00:00",
+  "universe": {
+    "source_id": "roster",
+    "members": [
+      "XNAS:XFIX",
+      "XNYS:YFIX",
+      "XNAS:ZFIX"
+    ]
+  },
+  "sources": {
+    "roster": {
+      "kind": "exchange",
+      "listing": "UNIVERSE",
+      "verified_by": "fixture-author",
+      "uri": "fixture://exchange/roster",
+      "revision": "v1",
+      "locator": "membership at close",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "universe.members"
+      ],
+      "members": [
+        "XNAS:XFIX",
+        "XNYS:YFIX",
+        "XNAS:ZFIX"
+      ],
+      "point_in_time": true,
+      "includes_later_delisted": true,
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-profile": {
+      "kind": "filing",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "profile schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "profile.company_name",
+        "profile.ticker",
+        "profile.headquarters",
+        "profile.country",
+        "profile.exchange",
+        "profile.sector",
+        "profile.products_services",
+        "profile.customers",
+        "profile.competitors",
+        "profile.investment_theme",
+        "profile.instrument_type"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-market": {
+      "kind": "exchange",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/exchange",
+      "revision": "2025-Q1-v1",
+      "locator": "market schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "market.currency",
+        "market.units",
+        "market.price",
+        "market.shares_outstanding",
+        "market.avg_daily_value_60d"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-accounts": {
+      "kind": "filing",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "accounts schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2024-12-31T23:59:59+00:00",
+      "supports": [
+        "accounts.basis",
+        "accounts.currency",
+        "accounts.units",
+        "accounts.fiscal_end",
+        "accounts.prior_fiscal_end",
+        "accounts.revenue",
+        "accounts.prior_revenue",
+        "accounts.income",
+        "accounts.prior_income",
+        "accounts.diluted_shares",
+        "accounts.prior_diluted_shares",
+        "accounts.ocf",
+        "accounts.capex",
+        "accounts.sbc",
+        "accounts.debt",
+        "accounts.unrestricted_cash"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-exposures": {
+      "kind": "filing",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "exposures schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "exposures.debt_due_12m",
+        "exposures.potential_dilution_pct",
+        "exposures.largest_customer_revenue_pct",
+        "exposures.currency",
+        "exposures.units"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-risk_review": {
+      "kind": "filing",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "risk_review schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "risk_review.bankruptcy_going_concern",
+        "risk_review.refinancing",
+        "risk_review.regulatory_exposure",
+        "risk_review.delisting",
+        "risk_review.reverse_splits",
+        "risk_review.related_party_transactions",
+        "risk_review.accounting_irregularities"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-industry": {
+      "kind": "industry_statistics",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/industry_statistics",
+      "revision": "2025-Q1-v1",
+      "locator": "industry schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "industry.industry_growth_pct",
+        "industry.tam",
+        "industry.obtainable_market",
+        "industry.currency",
+        "industry.units"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-commercial": {
+      "kind": "filing",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "commercial schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "commercial.stage",
+        "commercial.recognized_revenue",
+        "commercial.currency",
+        "commercial.units",
+        "commercial.fiscal_end"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-moat": {
+      "kind": "customer",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/customer",
+      "revision": "2025-Q1-v1",
+      "locator": "moat schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "moat.rating",
+        "moat.rationale"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-management": {
+      "kind": "filing",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "management schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "management.rating",
+        "management.rationale"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-institutional": {
+      "kind": "regulator",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/regulator",
+      "revision": "2025-Q1-v1",
+      "locator": "institutional schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "institutional.holders",
+        "institutional.prior_holders",
+        "institutional.ownership_change_pp"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-technical": {
+      "kind": "exchange",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/exchange",
+      "revision": "2025-Q1-v1",
+      "locator": "technical schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "technical.bars",
+        "technical.adjustment"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-thesis": {
+      "kind": "filing",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "thesis schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "thesis.bull_case",
+        "thesis.bear_case",
+        "thesis.catalysts",
+        "thesis.invalidation",
+        "thesis.monitoring_metrics"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "XFIX-assumptions": {
+      "kind": "filing",
+      "listing": "XNAS:XFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/XFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "assumptions schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "assumptions.bear",
+        "assumptions.base",
+        "assumptions.bull"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-profile": {
+      "kind": "filing",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "profile schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "profile.company_name",
+        "profile.ticker",
+        "profile.headquarters",
+        "profile.country",
+        "profile.exchange",
+        "profile.sector",
+        "profile.products_services",
+        "profile.customers",
+        "profile.competitors",
+        "profile.investment_theme",
+        "profile.instrument_type"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-market": {
+      "kind": "exchange",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/exchange",
+      "revision": "2025-Q1-v1",
+      "locator": "market schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "market.currency",
+        "market.units",
+        "market.price",
+        "market.shares_outstanding",
+        "market.avg_daily_value_60d"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-accounts": {
+      "kind": "filing",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "accounts schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2024-12-31T23:59:59+00:00",
+      "supports": [
+        "accounts.basis",
+        "accounts.currency",
+        "accounts.units",
+        "accounts.fiscal_end",
+        "accounts.prior_fiscal_end",
+        "accounts.revenue",
+        "accounts.prior_revenue",
+        "accounts.income",
+        "accounts.prior_income",
+        "accounts.diluted_shares",
+        "accounts.prior_diluted_shares",
+        "accounts.ocf",
+        "accounts.capex",
+        "accounts.sbc",
+        "accounts.debt",
+        "accounts.unrestricted_cash"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-exposures": {
+      "kind": "filing",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "exposures schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "exposures.debt_due_12m",
+        "exposures.potential_dilution_pct",
+        "exposures.largest_customer_revenue_pct",
+        "exposures.currency",
+        "exposures.units"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-risk_review": {
+      "kind": "filing",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "risk_review schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "risk_review.bankruptcy_going_concern",
+        "risk_review.refinancing",
+        "risk_review.regulatory_exposure",
+        "risk_review.delisting",
+        "risk_review.reverse_splits",
+        "risk_review.related_party_transactions",
+        "risk_review.accounting_irregularities"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-industry": {
+      "kind": "industry_statistics",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/industry_statistics",
+      "revision": "2025-Q1-v1",
+      "locator": "industry schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "industry.industry_growth_pct",
+        "industry.tam",
+        "industry.obtainable_market",
+        "industry.currency",
+        "industry.units"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-commercial": {
+      "kind": "filing",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "commercial schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "commercial.stage",
+        "commercial.recognized_revenue",
+        "commercial.currency",
+        "commercial.units",
+        "commercial.fiscal_end"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-moat": {
+      "kind": "customer",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/customer",
+      "revision": "2025-Q1-v1",
+      "locator": "moat schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "moat.rating",
+        "moat.rationale"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-management": {
+      "kind": "filing",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "management schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "management.rating",
+        "management.rationale"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-institutional": {
+      "kind": "regulator",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/regulator",
+      "revision": "2025-Q1-v1",
+      "locator": "institutional schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "institutional.holders",
+        "institutional.prior_holders",
+        "institutional.ownership_change_pp"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-technical": {
+      "kind": "exchange",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/exchange",
+      "revision": "2025-Q1-v1",
+      "locator": "technical schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "technical.bars",
+        "technical.adjustment"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-thesis": {
+      "kind": "filing",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "thesis schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "thesis.bull_case",
+        "thesis.bear_case",
+        "thesis.catalysts",
+        "thesis.invalidation",
+        "thesis.monitoring_metrics"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "YFIX-assumptions": {
+      "kind": "filing",
+      "listing": "XNYS:YFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/YFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "assumptions schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "assumptions.bear",
+        "assumptions.base",
+        "assumptions.bull"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-profile": {
+      "kind": "filing",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "profile schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "profile.company_name",
+        "profile.ticker",
+        "profile.headquarters",
+        "profile.country",
+        "profile.exchange",
+        "profile.sector",
+        "profile.products_services",
+        "profile.customers",
+        "profile.competitors",
+        "profile.investment_theme",
+        "profile.instrument_type"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-market": {
+      "kind": "exchange",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/exchange",
+      "revision": "2025-Q1-v1",
+      "locator": "market schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "market.currency",
+        "market.units",
+        "market.price",
+        "market.shares_outstanding",
+        "market.avg_daily_value_60d"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-accounts": {
+      "kind": "filing",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "accounts schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2024-12-31T23:59:59+00:00",
+      "supports": [
+        "accounts.basis",
+        "accounts.currency",
+        "accounts.units",
+        "accounts.fiscal_end",
+        "accounts.prior_fiscal_end",
+        "accounts.revenue",
+        "accounts.prior_revenue",
+        "accounts.income",
+        "accounts.prior_income",
+        "accounts.diluted_shares",
+        "accounts.prior_diluted_shares",
+        "accounts.ocf",
+        "accounts.capex",
+        "accounts.sbc",
+        "accounts.debt",
+        "accounts.unrestricted_cash"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-exposures": {
+      "kind": "filing",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "exposures schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "exposures.debt_due_12m",
+        "exposures.potential_dilution_pct",
+        "exposures.largest_customer_revenue_pct",
+        "exposures.currency",
+        "exposures.units"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-risk_review": {
+      "kind": "filing",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "risk_review schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "risk_review.bankruptcy_going_concern",
+        "risk_review.refinancing",
+        "risk_review.regulatory_exposure",
+        "risk_review.delisting",
+        "risk_review.reverse_splits",
+        "risk_review.related_party_transactions",
+        "risk_review.accounting_irregularities"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-industry": {
+      "kind": "industry_statistics",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/industry_statistics",
+      "revision": "2025-Q1-v1",
+      "locator": "industry schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "industry.industry_growth_pct",
+        "industry.tam",
+        "industry.obtainable_market",
+        "industry.currency",
+        "industry.units"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-commercial": {
+      "kind": "filing",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "commercial schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "commercial.stage",
+        "commercial.recognized_revenue",
+        "commercial.currency",
+        "commercial.units",
+        "commercial.fiscal_end"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-moat": {
+      "kind": "customer",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/customer",
+      "revision": "2025-Q1-v1",
+      "locator": "moat schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "moat.rating",
+        "moat.rationale"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-management": {
+      "kind": "filing",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "management schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "management.rating",
+        "management.rationale"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-institutional": {
+      "kind": "regulator",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/regulator",
+      "revision": "2025-Q1-v1",
+      "locator": "institutional schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "institutional.holders",
+        "institutional.prior_holders",
+        "institutional.ownership_change_pp"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-technical": {
+      "kind": "exchange",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/exchange",
+      "revision": "2025-Q1-v1",
+      "locator": "technical schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "technical.bars",
+        "technical.adjustment"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-thesis": {
+      "kind": "filing",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "thesis schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "thesis.bull_case",
+        "thesis.bear_case",
+        "thesis.catalysts",
+        "thesis.invalidation",
+        "thesis.monitoring_metrics"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    },
+    "ZFIX-assumptions": {
+      "kind": "filing",
+      "listing": "XNAS:ZFIX",
+      "verified_by": "fixture-author",
+      "uri": "fixture://primary/ZFIX/filing",
+      "revision": "2025-Q1-v1",
+      "locator": "assumptions schedule, exhibit 1",
+      "published_at": "2025-03-31T22:00:00+00:00",
+      "observed_at": "2025-03-31T22:00:00+00:00",
+      "supports": [
+        "assumptions.bear",
+        "assumptions.base",
+        "assumptions.bull"
+      ],
+      "retrieved_at": "2025-03-31T22:00:00+00:00"
+    }
+  },
+  "companies": [
+    {
+      "id": "XNAS:XFIX",
+      "sections": {
+        "profile": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-profile"
+          ],
+          "review": "verified",
+          "data": {
+            "company_name": "Fictional Grid Instruments",
+            "ticker": "XFIX",
+            "headquarters": "Portland, US",
+            "country": "US",
+            "exchange": "XNAS",
+            "sector": "Industrial technology",
+            "products_services": "Power monitoring sensors",
+            "customers": "Industrial equipment builders",
+            "competitors": "Incumbent sensor makers",
+            "investment_theme": "Grid automation",
+            "instrument_type": "listed_operating_equity"
+          }
+        },
+        "market": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-market"
+          ],
+          "review": "verified",
+          "data": {
+            "currency": "USD",
+            "units": "base_units",
+            "price": 10,
+            "shares_outstanding": 90000000,
+            "avg_daily_value_60d": 2200000
+          }
+        },
+        "accounts": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-accounts"
+          ],
+          "review": "verified",
+          "data": {
+            "basis": "reported_consolidated_ttm",
+            "currency": "USD",
+            "units": "base_units",
+            "fiscal_end": "2024-12-31",
+            "prior_fiscal_end": "2023-12-31",
+            "revenue": 400000000,
+            "prior_revenue": 310000000,
+            "income": 48000000,
+            "prior_income": 36000000,
+            "diluted_shares": 91000000,
+            "prior_diluted_shares": 90000000,
+            "ocf": 90000000,
+            "capex": 18000000,
+            "sbc": 6000000,
+            "debt": 40000000,
+            "unrestricted_cash": 120000000
+          }
+        },
+        "exposures": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-exposures"
+          ],
+          "review": "verified",
+          "data": {
+            "debt_due_12m": 10000000,
+            "potential_dilution_pct": 4,
+            "largest_customer_revenue_pct": 12,
+            "currency": "USD",
+            "units": "base_units"
+          }
+        },
+        "risk_review": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-risk_review"
+          ],
+          "review": "verified",
+          "data": {
+            "bankruptcy_going_concern": {
+              "severity": "clear",
+              "finding": "Fictional audit opinion contains no going-concern qualification or restructuring notice."
+            },
+            "refinancing": {
+              "severity": "clear",
+              "finding": "No covenant breach or imminent facility withdrawal reported."
+            },
+            "regulatory_exposure": {
+              "severity": "clear",
+              "finding": "Current product permits and renewals reviewed. No open enforcement disclosed."
+            },
+            "delisting": {
+              "severity": "clear",
+              "finding": "Latest listing compliance review confirms continued listing."
+            },
+            "reverse_splits": {
+              "severity": "clear",
+              "finding": "Reviewed split register contains no recent consolidation."
+            },
+            "related_party_transactions": {
+              "severity": "clear",
+              "finding": "Filing reconciles director transactions with disclosed approval policy."
+            },
+            "accounting_irregularities": {
+              "severity": "clear",
+              "finding": "No material weakness or restatement in the reviewed filing."
+            }
+          }
+        },
+        "industry": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-industry"
+          ],
+          "review": "verified",
+          "data": {
+            "industry_growth_pct": 18,
+            "tam": 12000000000,
+            "obtainable_market": 1400000000,
+            "currency": "USD",
+            "units": "base_units"
+          }
+        },
+        "commercial": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-commercial"
+          ],
+          "review": "verified",
+          "data": {
+            "stage": "recognized_revenue",
+            "recognized_revenue": 52000000,
+            "currency": "USD",
+            "units": "base_units",
+            "fiscal_end": "2024-12-31"
+          }
+        },
+        "moat": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-moat"
+          ],
+          "review": "verified",
+          "data": {
+            "rating": 3,
+            "rationale": "Qualification cycles and documented design wins support switching costs."
+          }
+        },
+        "management": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-management"
+          ],
+          "review": "verified",
+          "data": {
+            "rating": 3,
+            "rationale": "Two previously disclosed production milestones shipped on schedule."
+          }
+        },
+        "institutional": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-institutional"
+          ],
+          "review": "verified",
+          "data": {
+            "holders": 62,
+            "prior_holders": 55,
+            "ownership_change_pp": 2.5
+          }
+        },
+        "technical": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-technical"
+          ],
+          "review": "verified",
+          "data": {
+            "bars": [
+              {
+                "date": "2025-02-28",
+                "open": 9.0,
+                "high": 9.2,
+                "low": 8.8,
+                "close": 9.0
+              },
+              {
+                "date": "2025-03-07",
+                "open": 9.25,
+                "high": 9.45,
+                "low": 9.05,
+                "close": 9.25
+              },
+              {
+                "date": "2025-03-14",
+                "open": 9.5,
+                "high": 9.7,
+                "low": 9.3,
+                "close": 9.5
+              },
+              {
+                "date": "2025-03-21",
+                "open": 9.75,
+                "high": 9.95,
+                "low": 9.55,
+                "close": 9.75
+              },
+              {
+                "date": "2025-03-28",
+                "open": 10.0,
+                "high": 10.2,
+                "low": 9.8,
+                "close": 10.0
+              }
+            ],
+            "adjustment": "split_adjusted"
+          }
+        },
+        "thesis": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-thesis"
+          ],
+          "review": "verified",
+          "data": {
+            "bull_case": "Repeat sensor shipments improve operating leverage.",
+            "bear_case": "Customer redesigns remove the sensor from new platforms.",
+            "catalysts": "Qualification of a second production line.",
+            "invalidation": "Two consecutive quarters of falling paid sensor shipments.",
+            "monitoring_metrics": "Quarterly paid shipments, gross margin and diluted shares."
+          }
+        },
+        "assumptions": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "XFIX-assumptions"
+          ],
+          "review": "verified",
+          "data": {
+            "bear": {
+              "growth_pct": [
+                -5,
+                2
+              ],
+              "net_margin_pct": [
+                4,
+                7
+              ],
+              "annual_dilution_pct": [
+                3,
+                6
+              ],
+              "pe": [
+                10,
+                14
+              ],
+              "basis": "Model lost platform orders, margin compression and new equity funding."
+            },
+            "base": {
+              "growth_pct": [
+                15,
+                22
+              ],
+              "net_margin_pct": [
+                13,
+                16
+              ],
+              "annual_dilution_pct": [
+                1,
+                3
+              ],
+              "pe": [
+                18,
+                23
+              ],
+              "basis": "Model repeat shipments, moderate capacity utilization and continued employee grants.",
+              "by_horizon": {
+                "1": {
+                  "net_margin_pct": [
+                    10,
+                    13
+                  ],
+                  "basis": "First-year line qualification expenses precede the assumed longer-term utilization gains."
+                }
+              }
+            },
+            "bull": {
+              "growth_pct": [
+                24,
+                30
+              ],
+              "net_margin_pct": [
+                17,
+                20
+              ],
+              "annual_dilution_pct": [
+                0,
+                2
+              ],
+              "pe": [
+                23,
+                30
+              ],
+              "basis": "Model faster customer rollouts, production leverage and limited incremental funding."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "XNYS:YFIX",
+      "sections": {
+        "profile": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-profile"
+          ],
+          "review": "verified",
+          "data": {
+            "company_name": "Fictional Storage Systems",
+            "ticker": "YFIX",
+            "headquarters": "Portland, US",
+            "country": "US",
+            "exchange": "XNYS",
+            "sector": "Industrial technology",
+            "products_services": "Power monitoring sensors",
+            "customers": "Industrial equipment builders",
+            "competitors": "Incumbent sensor makers",
+            "investment_theme": "Grid automation",
+            "instrument_type": "listed_operating_equity"
+          }
+        },
+        "market": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-market"
+          ],
+          "review": "verified",
+          "data": {
+            "currency": "USD",
+            "units": "base_units",
+            "price": 10,
+            "shares_outstanding": 90000000,
+            "avg_daily_value_60d": 2200000
+          }
+        },
+        "accounts": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-accounts"
+          ],
+          "review": "verified",
+          "data": {
+            "basis": "reported_consolidated_ttm",
+            "currency": "USD",
+            "units": "base_units",
+            "fiscal_end": "2024-12-31",
+            "prior_fiscal_end": "2023-12-31",
+            "revenue": 400000000,
+            "prior_revenue": 310000000,
+            "income": 48000000,
+            "prior_income": 36000000,
+            "diluted_shares": 91000000,
+            "prior_diluted_shares": 90000000,
+            "ocf": 90000000,
+            "capex": 18000000,
+            "sbc": 6000000,
+            "debt": 40000000,
+            "unrestricted_cash": 120000000
+          }
+        },
+        "exposures": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-exposures"
+          ],
+          "review": "verified",
+          "data": {
+            "debt_due_12m": 10000000,
+            "potential_dilution_pct": 4,
+            "largest_customer_revenue_pct": 42,
+            "currency": "USD",
+            "units": "base_units"
+          }
+        },
+        "risk_review": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-risk_review"
+          ],
+          "review": "verified",
+          "data": {
+            "bankruptcy_going_concern": {
+              "severity": "clear",
+              "finding": "Fictional audit opinion contains no going-concern qualification or restructuring notice."
+            },
+            "refinancing": {
+              "severity": "severe",
+              "finding": "Lender refused the facility renewal following a covenant breach."
+            },
+            "regulatory_exposure": {
+              "severity": "clear",
+              "finding": "Current product permits and renewals reviewed. No open enforcement disclosed."
+            },
+            "delisting": {
+              "severity": "clear",
+              "finding": "Latest listing compliance review confirms continued listing."
+            },
+            "reverse_splits": {
+              "severity": "clear",
+              "finding": "Reviewed split register contains no recent consolidation."
+            },
+            "related_party_transactions": {
+              "severity": "clear",
+              "finding": "Filing reconciles director transactions with disclosed approval policy."
+            },
+            "accounting_irregularities": {
+              "severity": "clear",
+              "finding": "No material weakness or restatement in the reviewed filing."
+            }
+          }
+        },
+        "industry": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-industry"
+          ],
+          "review": "verified",
+          "data": {
+            "industry_growth_pct": 18,
+            "tam": 12000000000,
+            "obtainable_market": 1400000000,
+            "currency": "USD",
+            "units": "base_units"
+          }
+        },
+        "commercial": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-commercial"
+          ],
+          "review": "verified",
+          "data": {
+            "stage": "recognized_revenue",
+            "recognized_revenue": 52000000,
+            "currency": "USD",
+            "units": "base_units",
+            "fiscal_end": "2024-12-31"
+          }
+        },
+        "moat": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-moat"
+          ],
+          "review": "verified",
+          "data": {
+            "rating": 3,
+            "rationale": "Qualification cycles and documented design wins support switching costs."
+          }
+        },
+        "management": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-management"
+          ],
+          "review": "verified",
+          "data": {
+            "rating": 3,
+            "rationale": "Two previously disclosed production milestones shipped on schedule."
+          }
+        },
+        "institutional": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-institutional"
+          ],
+          "review": "verified",
+          "data": {
+            "holders": 62,
+            "prior_holders": 55,
+            "ownership_change_pp": 2.5
+          }
+        },
+        "technical": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-technical"
+          ],
+          "review": "verified",
+          "data": {
+            "bars": [
+              {
+                "date": "2025-02-28",
+                "open": 9.0,
+                "high": 9.2,
+                "low": 8.8,
+                "close": 9.0
+              },
+              {
+                "date": "2025-03-07",
+                "open": 9.25,
+                "high": 9.45,
+                "low": 9.05,
+                "close": 9.25
+              },
+              {
+                "date": "2025-03-14",
+                "open": 9.5,
+                "high": 9.7,
+                "low": 9.3,
+                "close": 9.5
+              },
+              {
+                "date": "2025-03-21",
+                "open": 9.75,
+                "high": 9.95,
+                "low": 9.55,
+                "close": 9.75
+              },
+              {
+                "date": "2025-03-28",
+                "open": 10.0,
+                "high": 10.2,
+                "low": 9.8,
+                "close": 10.0
+              }
+            ],
+            "adjustment": "split_adjusted"
+          }
+        },
+        "thesis": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-thesis"
+          ],
+          "review": "verified",
+          "data": {
+            "bull_case": "Repeat sensor shipments improve operating leverage.",
+            "bear_case": "Customer redesigns remove the sensor from new platforms.",
+            "catalysts": "Qualification of a second production line.",
+            "invalidation": "Two consecutive quarters of falling paid sensor shipments.",
+            "monitoring_metrics": "Quarterly paid shipments, gross margin and diluted shares."
+          }
+        },
+        "assumptions": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "YFIX-assumptions"
+          ],
+          "review": "verified",
+          "data": {
+            "bear": {
+              "growth_pct": [
+                -5,
+                2
+              ],
+              "net_margin_pct": [
+                4,
+                7
+              ],
+              "annual_dilution_pct": [
+                3,
+                6
+              ],
+              "pe": [
+                10,
+                14
+              ],
+              "basis": "Model lost platform orders, margin compression and new equity funding."
+            },
+            "base": {
+              "growth_pct": [
+                15,
+                22
+              ],
+              "net_margin_pct": [
+                13,
+                16
+              ],
+              "annual_dilution_pct": [
+                1,
+                3
+              ],
+              "pe": [
+                18,
+                23
+              ],
+              "basis": "Model repeat shipments, moderate capacity utilization and continued employee grants.",
+              "by_horizon": {
+                "1": {
+                  "net_margin_pct": [
+                    10,
+                    13
+                  ],
+                  "basis": "First-year line qualification expenses precede the assumed longer-term utilization gains."
+                }
+              }
+            },
+            "bull": {
+              "growth_pct": [
+                24,
+                30
+              ],
+              "net_margin_pct": [
+                17,
+                20
+              ],
+              "annual_dilution_pct": [
+                0,
+                2
+              ],
+              "pe": [
+                23,
+                30
+              ],
+              "basis": "Model faster customer rollouts, production leverage and limited incremental funding."
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "XNAS:ZFIX",
+      "sections": {
+        "profile": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-profile"
+          ],
+          "review": "verified",
+          "data": {
+            "company_name": "Fictional Controls",
+            "ticker": "ZFIX",
+            "headquarters": "Portland, US",
+            "country": "US",
+            "exchange": "XNAS",
+            "sector": "Industrial technology",
+            "products_services": "Power monitoring sensors",
+            "customers": "Industrial equipment builders",
+            "competitors": "Incumbent sensor makers",
+            "investment_theme": "Grid automation",
+            "instrument_type": "listed_operating_equity"
+          }
+        },
+        "market": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-market"
+          ],
+          "review": "verified",
+          "data": {
+            "currency": "USD",
+            "units": "base_units",
+            "price": 10,
+            "shares_outstanding": 90000000,
+            "avg_daily_value_60d": 2200000
+          }
+        },
+        "accounts": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-accounts"
+          ],
+          "review": "unresolved",
+          "data": {
+            "basis": "reported_consolidated_ttm",
+            "currency": "USD",
+            "units": "base_units",
+            "fiscal_end": "2024-12-31",
+            "prior_fiscal_end": "2023-12-31",
+            "revenue": 400000000,
+            "prior_revenue": 310000000,
+            "income": 48000000,
+            "prior_income": 36000000,
+            "diluted_shares": 91000000,
+            "prior_diluted_shares": 90000000,
+            "ocf": 90000000,
+            "capex": 18000000,
+            "sbc": 6000000,
+            "debt": 40000000,
+            "unrestricted_cash": 120000000
+          }
+        },
+        "exposures": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-exposures"
+          ],
+          "review": "verified",
+          "data": {
+            "debt_due_12m": 10000000,
+            "potential_dilution_pct": 4,
+            "largest_customer_revenue_pct": 12,
+            "currency": "USD",
+            "units": "base_units"
+          }
+        },
+        "risk_review": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-risk_review"
+          ],
+          "review": "verified",
+          "data": {
+            "bankruptcy_going_concern": {
+              "severity": "clear",
+              "finding": "Fictional audit opinion contains no going-concern qualification or restructuring notice."
+            },
+            "refinancing": {
+              "severity": "clear",
+              "finding": "No covenant breach or imminent facility withdrawal reported."
+            },
+            "regulatory_exposure": {
+              "severity": "clear",
+              "finding": "Current product permits and renewals reviewed. No open enforcement disclosed."
+            },
+            "delisting": {
+              "severity": "clear",
+              "finding": "Latest listing compliance review confirms continued listing."
+            },
+            "reverse_splits": {
+              "severity": "clear",
+              "finding": "Reviewed split register contains no recent consolidation."
+            },
+            "related_party_transactions": {
+              "severity": "clear",
+              "finding": "Filing reconciles director transactions with disclosed approval policy."
+            },
+            "accounting_irregularities": {
+              "severity": "clear",
+              "finding": "No material weakness or restatement in the reviewed filing."
+            }
+          }
+        },
+        "industry": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-industry"
+          ],
+          "review": "verified",
+          "data": {
+            "industry_growth_pct": 18,
+            "tam": 12000000000,
+            "obtainable_market": 1400000000,
+            "currency": "USD",
+            "units": "base_units"
+          }
+        },
+        "commercial": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-commercial"
+          ],
+          "review": "verified",
+          "data": {
+            "stage": "recognized_revenue",
+            "recognized_revenue": 52000000,
+            "currency": "USD",
+            "units": "base_units",
+            "fiscal_end": "2024-12-31"
+          }
+        },
+        "moat": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-moat"
+          ],
+          "review": "verified",
+          "data": {
+            "rating": 3,
+            "rationale": "Qualification cycles and documented design wins support switching costs."
+          }
+        },
+        "management": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-management"
+          ],
+          "review": "verified",
+          "data": {
+            "rating": 3,
+            "rationale": "Two previously disclosed production milestones shipped on schedule."
+          }
+        },
+        "institutional": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-institutional"
+          ],
+          "review": "verified",
+          "data": {
+            "holders": 62,
+            "prior_holders": 55,
+            "ownership_change_pp": 2.5
+          }
+        },
+        "technical": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-technical"
+          ],
+          "review": "verified",
+          "data": {
+            "bars": [
+              {
+                "date": "2025-02-28",
+                "open": 9.0,
+                "high": 9.2,
+                "low": 8.8,
+                "close": 9.0
+              },
+              {
+                "date": "2025-03-07",
+                "open": 9.25,
+                "high": 9.45,
+                "low": 9.05,
+                "close": 9.25
+              },
+              {
+                "date": "2025-03-14",
+                "open": 9.5,
+                "high": 9.7,
+                "low": 9.3,
+                "close": 9.5
+              },
+              {
+                "date": "2025-03-21",
+                "open": 9.75,
+                "high": 9.95,
+                "low": 9.55,
+                "close": 9.75
+              },
+              {
+                "date": "2025-03-28",
+                "open": 10.0,
+                "high": 10.2,
+                "low": 9.8,
+                "close": 10.0
+              }
+            ],
+            "adjustment": "split_adjusted"
+          }
+        },
+        "thesis": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-thesis"
+          ],
+          "review": "verified",
+          "data": {
+            "bull_case": "Repeat sensor shipments improve operating leverage.",
+            "bear_case": "Customer redesigns remove the sensor from new platforms.",
+            "catalysts": "Qualification of a second production line.",
+            "invalidation": "Two consecutive quarters of falling paid sensor shipments.",
+            "monitoring_metrics": "Quarterly paid shipments, gross margin and diluted shares."
+          }
+        },
+        "assumptions": {
+          "prepared_at": "2025-03-31T22:00:00+00:00",
+          "sources": [
+            "ZFIX-assumptions"
+          ],
+          "review": "verified",
+          "data": {
+            "bear": {
+              "growth_pct": [
+                -5,
+                2
+              ],
+              "net_margin_pct": [
+                4,
+                7
+              ],
+              "annual_dilution_pct": [
+                3,
+                6
+              ],
+              "pe": [
+                10,
+                14
+              ],
+              "basis": "Model lost platform orders, margin compression and new equity funding."
+            },
+            "base": {
+              "growth_pct": [
+                15,
+                22
+              ],
+              "net_margin_pct": [
+                13,
+                16
+              ],
+              "annual_dilution_pct": [
+                1,
+                3
+              ],
+              "pe": [
+                18,
+                23
+              ],
+              "basis": "Model repeat shipments, moderate capacity utilization and continued employee grants.",
+              "by_horizon": {
+                "1": {
+                  "net_margin_pct": [
+                    10,
+                    13
+                  ],
+                  "basis": "First-year line qualification expenses precede the assumed longer-term utilization gains."
+                }
+              }
+            },
+            "bull": {
+              "growth_pct": [
+                24,
+                30
+              ],
+              "net_margin_pct": [
+                17,
+                20
+              ],
+              "annual_dilution_pct": [
+                0,
+                2
+              ],
+              "pe": [
+                23,
+                30
+              ],
+              "basis": "Model faster customer rollouts, production leverage and limited incremental funding."
+            }
+          }
+        }
+      }
+    }
+  ]
+}

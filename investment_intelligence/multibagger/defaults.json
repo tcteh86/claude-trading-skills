@@ -1,0 +1,45 @@
+{
+  "weights": {
+    "industry": 15,
+    "growth": 15,
+    "moat": 15,
+    "financial_health": 15,
+    "valuation": 15,
+    "adoption": 10,
+    "management": 5,
+    "institutional": 5,
+    "momentum": 5
+  },
+  "universe": {
+    "exchanges": [],
+    "countries": [],
+    "sectors": [],
+    "currency": "USD",
+    "min_cap": 300000000,
+    "max_cap": 10000000000,
+    "min_daily_value": 500000,
+    "horizon_years": 5
+  },
+  "thresholds": {
+    "min_attractiveness": 55,
+    "min_confidence": 80,
+    "speculative_risk_score": 45,
+    "max_market_age_days": 7,
+    "max_report_age_days": 460,
+    "adoption_revenue_target_pct": 10,
+    "min_upside_downside": 1.25,
+    "runway_months": 18,
+    "debt_cash_coverage": 1.25,
+    "historical_dilution_pct": 8,
+    "potential_dilution_pct": 15,
+    "sbc_revenue_pct": 10,
+    "customer_concentration_pct": 30,
+    "risk_daily_value": 1000000,
+    "industry_growth_target_pct": 20,
+    "revenue_growth_target_pct": 25,
+    "eps_growth_target_pct": 25,
+    "fcf_margin_target_pct": 20,
+    "return_target_pct": 20,
+    "max_risk_age_days": 210
+  }
+}
